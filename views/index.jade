@@ -1,0 +1,24 @@
+#form
+#list
+
+script(id="formView", type="text/template")
+  <h2>new User</h2>
+  <p>Name: <input type="text" id="name" /></p>
+  <p>Age: <input type="text" id="age" /></p>
+  <p><button>Create</button></p>
+
+script(id="userView", type="text/template")
+  <p> Name: <%= name %> </p>
+  <p> Age: <%= age %> </p>
+
+script(id="userView", type="text/template")
+  <h2> Users </h2>
+
+script(id="noUserView", type="text/template")
+  <h2> No Users </h2>
+
+script(src="jquery-latest.js")
+script(src="underscore.js")
+script(src="backbone.js")
+script(src="backbone.marionette.js")
+script(src="app.js")
